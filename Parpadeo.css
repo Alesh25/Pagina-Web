@@ -1,0 +1,81 @@
+.Parpadeo1{ 
+text-shadow: 0px 0px 5px Yellow;
+font-weight: bolder;
+animation:blinkingText 5s infinite; } 
+@keyframes blinkingText{
+ 10% {color: #940000;}
+ 40% {color: #003194;}
+ 60% {color: #870094;}
+ 80% {color: #009482;} 
+100% {color: #940026;} 
+  }
+  
+.Parpadeo{
+	text-shadow: 0px 0px 5px Yellow;
+	font-weight: bolder; 
+animation:blinkingText 7s infinite; } 
+@keyframes blinkingText{
+ 10% {color: #940000;}
+ 40% {color: #003194;}
+ 60% {color: #870094;}
+ 80% {color: #009482;} 
+100% {color: #940026;}  
+  }
+  
+.Parpadeo3{ 
+text-shadow: 0px 0px 5px Yellow;
+font-weight: bolder;
+animation:blinkingText 9s infinite; 
+} 
+@keyframes blinkingText{
+ 10% {color: #940000;}
+ 40% {color: #003194;}
+ 60% {color: #870094;}
+ 80% {color: #009482;} 
+100% {color: #940026;} 
+  }
+  
+.Parpadeo4{ 
+text-shadow: 0px 0px 5px Yellow;
+font-weight: bolder;
+animation:blinkingText 11s infinite; } 
+@keyframes blinkingText{
+ 10% {color: #940000;}
+ 40% {color: #003194;}
+ 60% {color: #870094;}
+ 80% {color: #009482;} 
+100% {color: #940026;}  
+  }
+  
+ .Parpadeo5{ 
+text-shadow: 0px 0px 5px Yellow;
+ font-weight: bolder;
+animation:blinkingText 1s infinite; } 
+@keyframes blinkingText{
+ 10% {color: #940000;}
+ 40% {color: #003194;}
+ 60% {color: #870094;}
+ 80% {color: #009482;} 
+100% {color: #940026;} 
+  }
+
+.Boton
+{
+	font-size:12px;
+	color:#FFFFFFF;
+text-decoration:overline;
+background-color: #B6FFF6;	
+}
+
+.Boton2
+{
+text-decoration:overline;
+background-color: #FDB6FF;	
+}
+
+.Boton3
+{
+text-decoration:overline;
+background-color: #FFC679;	
+}
+  

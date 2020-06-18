@@ -1,0 +1,114 @@
+.contenedor {
+	width: 95%;
+	max-width:1000px;
+	margin:auto;
+}
+ 
+.contenedor p {
+	margin-bottom:40px;
+}
+ 
+header nav {
+	background:#3498db;
+	margin-bottom:10px;
+}
+ 
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+ 
+header nav ul li {
+	float: left;
+}
+ 
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#fff;
+	text-decoration: none;
+}
+ 
+header nav ul li a:hover {
+	background:#2980b9;
+}
+ 
+ 
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position: fixed;
+	z-index:1000;
+	top:0;
+	max-width:1000px;
+	width:100%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+		
+.submenu1 {
+	background-color: #00BDFF;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #FFFF77;
+	font-weight:bolder;
+}
+
+.submenu2 {
+	background-color: #AE00FF;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #55F77F;
+	font-weight:bolder;
+}
+
+.submenu3 {
+	background-color: #FFAE00;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #FFF5FF;
+	font-weight:bolder;
+}
+
+.submenu4 {
+	background-color: #FF0000;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #FFF77F;
+	font-weight:bolder;
+}
+
+.submenu5 {
+	background-color: #93FF00;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #FF77FF;
+	font-weight:bolder;
+}
+
+.submenu6 {
+	background-color: #FF008F;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #F77FFF;
+	font-weight:bolder;
+}
+
+.submenu7 {
+	background-color: #000000;
+	margin-bottom: 15px;
+	width: 30%;
+	height: 30%;
+	color: #FFFF77;
+	font-weight:bolder;
+}
+
+.boton_fondo_corredizo_abajo:hover {
+                box-shadow: inset 0 200px 0 0 #08B;
+            }
+			

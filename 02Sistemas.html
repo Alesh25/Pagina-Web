@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unidad 2</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="java.js"></script>
+<script src="move.js"></script>
+<script>
+    /**
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+     */
+    var imagenes=new Array(
+        ['Imagenes/u2/Inicio/calaca.jpg','Examen1.html'],
+        ['Imagenes/u2/Inicio/oso.jpg','hard.html'],
+        ['Imagenes/u2/Inicio/muñecos.jpg','salida.html']
+    );
+    var contador=0;
+ 
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function rotarImagenes()
+    {
+        // cambiamos la imagen y la url
+        contador++
+        document.getElementById("imagen").src=imagenes[contador%imagenes.length][0];
+        document.getElementById("link").href=imagenes[contador%imagenes.length][1];
+    }
+ 
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload=function()
+    {
+        // Cargamos una imagen aleatoria
+        rotarImagenes();
+ 
+        // Indicamos que cada 5 segundos cambie la imagen
+        setInterval(rotarImagenes,3000);
+    }
+</script>
+<style>
+body{
+  background-image: url(Imagenes/u2/fondos.gif);
+-webkit-background-size: 500px 400px;
+}
+a:link{
+	text-decoration:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+	<header>
+		<div class="contenedor">
+			<div class="logo">
+				
+			</div>
+			<nav class="menu-fixed">
+            <nav class="nav">
+				<ul>
+					<li><a href="Unidad2.html"><font size="+2">Inicio</font></a></li>
+					<li><a href="02Armado.html"><font size="+2">Armado De Una PC</font></a></li>
+					<li><a href="02Categorias.html"><font size="+2">Categorias De PC</font></a></li>
+					<li><a href="02NecesitasPC.html"><font size="+2">Que Tipo De PC Necesitas</font></a></li>
+					<li><a href="02Extra.html"><font size="+2">Extra</font></a></li>
+				</ul>
+			</nav>
+            </nav>
+		</div>
+	</header>
+ <div class="contenedor"> 
+ <br> <br> <br>  <br> <br> 
+
+
+
+<H1 align="left" style=" background-color:#000393; color:#FFF";>Sistemas Operativos</H1>
+
+<p align="justify" style="color: #000000; background-color: rgba(255,255,255,0.75); font-weight:bolder;"><font size="+3">
+El sistema Operativo es el programa que hace que usar tu PC sea mas facil, hace años solo eran letras y numeros los cuales eran codigos y actualmente gracias a Apple los sistemas operativos ya tienen imagen y con ayuda del mouse puedes usarlo muy facil. 
+</font></p>
+
+<p align="justify" style=" background-color: rgba(0,228,255,0.75); font-weight:bolder;"><font size="+3">
+Windows <br /><br />
+Este sistema operativo es el mas popular mundialmente ya que es muy accesible y facil de utilizar, actualmente estan 2 versiones disponibles las cuales si tienen gran diferencia. <br />
+Primero tenemos el Windows 8 con una interfas diseñada principalmente para dispositivos touche ya que tiene un modo de usarse complicado con  el mouse (si e que no tienes mucha experiencia).<br /><br />
+
+
+<br /><br />
+El otro sistema de Microsoft es Windows 10, el cual es una convinación del windows 8 y el windows 7, ya que regresa el boton inicio pero con la interfas del 8, este sistema tiene en configuraciones la opcion de usarse en touche o en PC normal y es mas facil ya que tiene atajos mas faciles de entender ya que es parecido a los windows anteriores al 8.
+
+</font></p>
+
+<p align="justify" style=" background-color: rgba(0,228,255,0.75); font-weight:bolder;"><font size="+3">
+MAC OS X<br /><br />
+Este sistema Operativo no se puede instalar en cualquier PC solo viene de fabrica al adquirir una computadora Apple (las cuales son mas costosas)
+<br />
+Al utilizar este sistema es mas complejo ya que es completamente diferente al mas usado pero sabiendo lo basico es casi lo mismo.
+<br /><br />
+
+</font></p>
+
+<p align="justify" style=" background-color: rgba(0,228,255,0.75); font-weight:bolder;"><font size="+3">
+Linux<br /><br />
+Uno de los sistemas operativos Gratis mas famosos, pero uno de los mas complicados de usar ya que no todos los programas que se pueden instalar tienen botones para cerrar el programa o minimizarlo, se ocupan comando los cuales son convinaciones con el teclado.
+</font></p>
+
+
+
+</div>
+
+<table width="100%" border="0" align="center">
+<tr>
+	<td class="submenu7"><p align="center"><font size="+3" face="Palatino Linotype, Book Antiqua, Palatino, serif" color="#33FFFF"> Carbajal Velazquez Alejandro 6IV21  </font></p></td>
+    </tr>
+    <tr>
+    <td width="40%" class="submenu7"><p align="center"><font size="+1" color="#FFFFFF"> 
+    Dudas o Sugerencias: <br>
+    aleshmusic99@gmail.com <br>
+    Tel: 5535985000
+    </font></p></td></tr>
+    </table> 
+
+</body>
+</html>

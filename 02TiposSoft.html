@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unidad 2</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="java.js"></script>
+<script src="move.js"></script>
+<script>
+    /**
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+     */
+    var imagenes=new Array(
+        ['Imagenes/u2/Inicio/calaca.jpg','Examen1.html'],
+        ['Imagenes/u2/Inicio/oso.jpg','hard.html'],
+        ['Imagenes/u2/Inicio/muñecos.jpg','salida.html']
+    );
+    var contador=0;
+ 
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function rotarImagenes()
+    {
+        // cambiamos la imagen y la url
+        contador++
+        document.getElementById("imagen").src=imagenes[contador%imagenes.length][0];
+        document.getElementById("link").href=imagenes[contador%imagenes.length][1];
+    }
+ 
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload=function()
+    {
+        // Cargamos una imagen aleatoria
+        rotarImagenes();
+ 
+        // Indicamos que cada 5 segundos cambie la imagen
+        setInterval(rotarImagenes,3000);
+    }
+</script>
+<style>
+body{
+  background-image: url(Imagenes/u2/fondos.gif);
+-webkit-background-size: 500px 400px;
+}
+a:link{
+	text-decoration:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+	<header>
+		<div class="contenedor">
+			<div class="logo">
+				
+			</div>
+			<nav class="menu-fixed">
+            <nav class="nav">
+				<ul>
+					<li><a href="Unidad2.html"><font size="+2">Inicio</font></a></li>
+					<li><a href="02Armado.html"><font size="+2">Armado De Una PC</font></a></li>
+					<li><a href="02Categorias.html"><font size="+2">Categorias De PC</font></a></li>
+					<li><a href="02NecesitasPC.html"><font size="+2">Que Tipo De PC Necesitas</font></a></li>
+					<li><a href="02Extra.html"><font size="+2">Extra</font></a></li>
+				</ul>
+			</nav>
+            </nav>
+		</div>
+	</header>
+ <div class="contenedor"> 
+ <br> <br> <br>  <br> <br> 
+
+<p align="justify" style="color: #000000; background-color: rgba(54,0,22,0.75); font-weight:bolder;"><font size="+3" color="#FFFFFF">
+Tipos de Software
+</font></p>
+
+
+<p align="justify" style="color: #000000; background-color: rgba(255,0,255,0.75); font-weight:bolder;"><font size="+3">
+En esta sección vamos a explicar los tipos de software para trabajar en su computadora y lo basico que se necesitan para poder instalar en su PC.
+</font></p>
+
+<p align="justify" style="color: #000000; background-color: rgba(120,0,200,0.75); font-weight:bolder;"><font size="+3">
+Software Basicos
+</font></p>
+
+<p align="justify" style="color: #000000; background-color: rgba(240,0,150,0.75); font-weight:bolder;"><font size="+3">
+A parte del sistema operativo lo basico que necesta tu maquina y estos progrmas soporta cualquier computadora es un antivirus, y existen muchos en el mercado desde gratuitos hasta unos que te protegen de cosas que uno no pensaria que pasan en nuestras computadoras, a mi parecer el mejor antivirus que e provado es AVAST, ya que su proteccion es muy buena contra amenazas y virus y es gratuito.
+</font></p>
+<p align="center"><img src="Imagenes/software/1366_2000.jpg" width="775" height="404" /></p>
+<p align="justify" style="color: #000000; background-color: rgba(240,0,150,0.75); font-weight:bolder;"><font size="+3">
+Otros programas que necesitas y que actualmente son indispensables es OFFICE, el cual consta de 3 programas principales Word, Excel y PowerPoint, los cuales para trabajos de oficinas y escuelas son muy utiles y se puede realizar muchas cosas con ellos, y tambien existe otros programas gratuitos que ayudan a realizar ese tipo de tareas. Aunque OFFICE no es gratuito del todo pero es una buena inversión al adquirirlo de por vida.
+</font></p>
+<p align="center"><img src="Imagenes/software/1903-office-365-empresas-pymes.png" width="724" height="482" /></p>
+<p align="justify" style="color: #000000; background-color: rgba(240,0,150,0.75); font-weight:bolder;"><font size="+3">
+Un programa que ayuda mucho al rendimiento de tu maquina es Cclaner el cual limpia archivos que no sabes que tienes ya que son basura de programas o simplemente por ir navegando en internet y van ocupando espacio en nuestro disco duro alentando nuestra maquina. <br /><br />
+Mas programas que te facilitan muchas cosas en la computadora es Adobe Reader el cual abre los archivos PDF y hasta editarlos de manera gratuita. Otro es WinRAR el cual te ayuda a comprimir y descomprimir archivos para mandarlos por correo o descargar muchos archivos mas rapido ya que los hace que pesen menos.
+</font></p>
+<p align="center"><img src="Imagenes/software/1558964098_062127_1558964261_noticia_normal.jpg" width="1200" height="675" /></p>
+<p align="justify" style="color: #000000; background-color: rgba(120,0,200,0.75); font-weight:bolder;"><font size="+3">
+Software Intermedios & Avanzados
+</font></p>
+
+<p align="justify" style="color: #000000; background-color: rgba(120,0,200,0.75); font-weight:bolder;"><font size="+3">
+Este tipo de software son para estudiantes de cierta area o ya trabajadores como diseñadores, etc. <br />
+Muchos de estos Software necesitan minimo 8Gb de RAM y procesador Core i5 o superior para trabajar sin problema.
+</font></p>
+<p align="center"><img src="Imagenes/software/box-ui-cdgs2020-win.jpg" width="540" height="318" />
+<p align="justify" style="color: #000000; background-color: rgba(120,0,200,0.75); font-weight:bolder;"><font size="+3">
+Hablando de manera Profesional se encuentran la serie de programas de Adobe y Corel Draw, los cuales tienen principalmente para edición de Fotos y videos y actualmente han sacado programas para edicion de audio y animación pero si requieren de grandes componentes para poder usarlos, entre esos programas se encuentan Photoshop, Adobe Illustrator, Adobe Audition, Adobe Animation, Core Draw, After Effects, y muchos otros para todo lo que se requiera digitalmente. Aunque su costo es muy elevado te ayudan hacer muchas cosas, pero no son indispensables ya que tambien existen programas gratuitos para realizar trabajos similares.
+  
+    <img src="Imagenes/software/cuales-son-las-principales-herramientas-de-photoshop.png" width="1120" height="650" /> <br /><br />
+Si lo tuyo es programar debes pensar en que te gusta mas programar ya que una computadora con Intel Pentium te sirve para programacion basica e intermedia pero para hacer bases de datos grandes o videojuegos necesitas mas potencia ya que programas como Unity, Unreal Engin, son grandes motores de programación de videojuegos y animaciones GRATUITOS pero necesitas maquinas potentes, otros que entran en esta lista es Blende, Maya, AutoCad, que son para moldear figuras o personasjes en 3D y animarlas.  
+</font></p>
+
+<p align="justify" style="color: #000000; background-color: rgba(120,0,200,0.75); font-weight:bolder;"><font size="+3">
+Si te interesa la programación, electronica e Informatica te invitamos a nuestro canal de youtube <a href="https://www.youtube.com/channel/UCRjLWKoyuTe_WPdwbzJHYYg" target="_blank"> NERMES </a>
+</font></p>
+
+</div>
+
+<table width="100%" border="0" align="center">
+<tr>
+	<td class="submenu7"><p align="center"><font size="+3" face="Palatino Linotype, Book Antiqua, Palatino, serif" color="#33FFFF"> Carbajal Velazquez Alejandro 6IV21  </font></p></td>
+    </tr>
+    <tr>
+    <td width="40%" class="submenu7"><p align="center"><font size="+1" color="#FFFFFF"> 
+    Dudas o Sugerencias: <br>
+    aleshmusic99@gmail.com <br>
+    Tel: 5535985000
+    </font></p></td></tr>
+    </table> 
+
+</body>
+</html>

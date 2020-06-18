@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Diferencias</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="java.js"></script>
+<script src="move.js"></script>
+<script>
+    /**
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+     */
+    var imagenes=new Array(
+        ['Imagenes/u2/Inicio/calaca.jpg','Examen1.html'],
+        ['Imagenes/u2/Inicio/oso.jpg','hard.html'],
+        ['Imagenes/u2/Inicio/muñecos.jpg','salida.html']
+    );
+    var contador=0;
+ 
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function rotarImagenes()
+    {
+        // cambiamos la imagen y la url
+        contador++
+        document.getElementById("imagen").src=imagenes[contador%imagenes.length][0];
+        document.getElementById("link").href=imagenes[contador%imagenes.length][1];
+    }
+ 
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload=function()
+    {
+        // Cargamos una imagen aleatoria
+        rotarImagenes();
+ 
+        // Indicamos que cada 5 segundos cambie la imagen
+        setInterval(rotarImagenes,3000);
+    }
+</script>
+<style>
+body{
+  background-image: url(Imagenes/u2/fondos.gif);
+-webkit-background-size: 500px 400px;
+}
+a:link{
+	text-decoration:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+	<header>
+		<div class="contenedor">
+			<div class="logo">
+				
+			</div>
+			<nav class="menu-fixed">
+            <nav class="nav">
+				<ul>
+					<li><a href="Unidad2.html"><font size="+2">Inicio</font></a></li>
+					<li><a href="02Armado.html"><font size="+2">Armado De Una PC</font></a></li>
+					<li><a href="02Categorias.html"><font size="+2">Categorias De PC</font></a></li>
+					<li><a href="02NecesitasPC.html"><font size="+2">Que Tipo De PC Necesitas</font></a></li>
+					<li><a href="02Extra.html"><font size="+2">Extra</font></a></li>
+				</ul>
+			</nav>
+            </nav>
+		</div>
+	</header>
+ <div class="contenedor"> 
+ <br> <br> <br>  <br> <br> 
+
+<H1 align="left" style=" background-color:#000393; color:#FFF";>Diferencias De Hardwares</H1>
+
+<p align="justify" style="color: #000000; background-color: rgba(255,255,255,0.75); font-weight:bolder;"><font size="+3">
+
+Cuando te dicen que un componente como un disco duro de 500Gb no especifica que detalles tiene ese disco duro solo su principal funcionamiento que en este caso es su almacenamiento, pero existen distintos ya sea por su coneccion y velocidad. En todos los componentes pasa igual.
+<br /><br />
+En este apartado explicamos las diferencias de varios componentes, principalmente de los mas importantes de una PC, pero al final todo dependera el dinero que puedas invertirle y para que la quieras.
+</font></p>
+
+<H2 align="left" style=" background-color:#000393; color:#FFF";>Procesador</H2>
+
+<p align="justify" style="color: #000000; background-color: rgba(255,255,255,0.75); font-weight:bolder;"><font size="+3">
+
+El Procesador es conocido como el cerebro de una computadora y pasa lo mismo como en una persona, no todas procesan de la misma manera la informacion del ordenador, esto se debe a que cada procesador tiene distintas caracteristicas, como su generación, nucleos, velocidad y marca. Todas estas caracteristicas son lo que debes checar al escoger un procesador.
+<br /><br />
+Si quieres saber mas sobre la diferencia de<a href="02Mejor.html"> Procesadores dale Clic a este enlace.</a>
+
+</font></p>
+
+<p align="center"> <img src="Imagenes/consejos/giphy (1).gif" width="500" height="281" /></p>
+
+<H2 align="left" style=" background-color:#000393; color:#FFF";>Disco Duro</H2>
+
+<p align="justify" style="color: #000000; background-color: rgba(255,255,255,0.75); font-weight:bolder;"><font size="+3">
+
+El disco duro sabemos que es la unidad principal de almacenamiento pero existen dos tipos de unidades de almacenamiento, que es el disco duro mecanico el cual es de alto almacenamiento pero como es mecanico es lento en traer la informacion a comparación del disco de estado solido el cual no tiene nada de disco pero sirve para lo mismo, la desventaja de este esque es menor capacidad y su precio es mas elevado.<br /><br />
+
+Hay personas que tienen los 2 en su ordenador y el de estado solido lo ocupan para guardar ahi el sistema operativo y programas.
+
+</font></p>
+
+<p align="center"> <img src="Imagenes/consejos/disco-duro-funcionando-75979.gif" width="198" height="257" /></p>
+
+<H2 align="left" style=" background-color:#000393; color:#FFF";>Tarjeta Madre</H2>
+
+<p align="justify" style="color: #000000; background-color: rgba(255,255,255,0.75); font-weight:bolder;"><font size="+3">
+
+Existen muchas en el mercado pero lo que se caracterisa en cada una es por los perifericos que tiene y los espacios para agregarle mas cosas como RAM, Disco duros, Tarjeta de video, etc. <br /><br />
+
+Otra caracteristica de las tarjetas madre es su tamaño y esto depende del gabinete y del espacio que tengas.
+
+</font></p>
+<p align="center"> <img src="Imagenes/consejos/mb_dram.gif" width="600" height="614" /></p>
+
+
+
+
+
+</div>
+
+<table width="100%" border="0" align="center">
+<tr>
+	<td class="submenu7"><p align="center"><font size="+3" face="Palatino Linotype, Book Antiqua, Palatino, serif" color="#33FFFF"> Carbajal Velazquez Alejandro 6IV21  </font></p></td>
+    </tr>
+    <tr>
+    <td width="40%" class="submenu7"><p align="center"><font size="+1" color="#FFFFFF"> 
+    Dudas o Sugerencias: <br>
+    aleshmusic99@gmail.com <br>
+    Tel: 5535985000
+    </font></p></td></tr>
+    </table> 
+
+</body>
+</html>

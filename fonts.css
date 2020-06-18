@@ -1,0 +1,343 @@
+* {
+    margin:0;
+    padding:0;
+}
+ 
+header {
+    margin-top:10px;
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+ 
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:20px auto;
+    max-width:1000px;
+    width:90%;
+}
+ 
+nav ul {
+    list-style:none;
+}
+ 
+nav > ul {
+    display:table;
+    width:100%;
+    background:#000;
+    position:relative;
+}
+ 
+nav > ul li {
+    display:table-cell;
+}
+ 
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+    display:block;
+    height:100%;
+}
+ 
+nav > ul > li > ul {
+    display:block;
+    position:absolute;
+    background:#000;
+    
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul li a {
+    color:#fff;
+    display:block;
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+    background:#5da5a2;
+}
+ 
+nav > ul > li > a span {
+    background:#174459;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+    display:block;
+    line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+    top:0;
+}
+ 
+/*Colores*/
+nav ul li a .primero {
+    background:#0e5061;
+}
+ 
+nav ul li a .segundo {
+    background:#5da5a2;
+}
+ 
+nav ul li a .tercero {
+    background:#f25724;
+}
+ 
+nav ul li a .cuarto {
+    background:#174459;
+}
+ 
+nav ul li a .quinto {
+    background:#37a4d9;
+}
+
+/*cambios hover*/
+.content-all{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-img{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-img img{
+    width: 100%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(116,3,17,0.5);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -750px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(116,3,17,0.5);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content-3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(116,3,17,0.5);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -500px;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
+}
+
+.content-4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(116,3,17,0.5);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -850px;
+    margin-top: -500px;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content-img:hover .content-1{
+    width: 222%;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+}
+
+.content-img:hover .content-2{
+    width: 222%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-img:hover .content-3{
+    width: 222%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content-img:hover .content-4{
+    width: 222%;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content-img:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0.8;
+}
+
+.content-txt{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 10px;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content-txt h2{
+    font-size: 30px;
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-txt p{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-img:hover h2{
+    opacity: 1;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.content-img:hover p{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+/*cambios fuera del menu*/
+body{
+    background-color:floralwhite;
+    margin-bottom: 40px;
+}
+/*cambios william*/
+.infoini img{
+    width: 200px;
+    height: 230px;
+    border-radius: 100%;
+    margin-right: 0px;
+}
+.infoini{
+    padding: 30px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.desc p{
+    text-align: justify;
+    display: inline-block;
+}
+
+.desc{
+    display: block;
+    width: 400px;
+}
+
+.gdesc{
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+}
+
+.gdesc h2{
+    font-size: 40px;
+    color:darkred;
+}
+
+.infoini p{
+    font-size: 16px;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.8);
+    color: aliceblue;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}

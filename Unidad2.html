@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Unidad 2</title>
+<link rel="stylesheet" href="estilo.css">
+<script src="java.js"></script>
+<script src="move.js"></script>
+<script>
+    /**
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+     */
+    var imagenes=new Array(
+        ['Imagenes/u2/Inicio/calaca.gif','hard.html'],
+        ['Imagenes/u2/Inicio/oso.gif','02Concejos.html'],
+        ['Imagenes/u2/Inicio/muñecos.gif','02Mejor.html']
+    );
+    var contador=0;
+ 
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function rotarImagenes()
+    {
+        // cambiamos la imagen y la url
+        contador++
+        document.getElementById("imagen").src=imagenes[contador%imagenes.length][0];
+        document.getElementById("link").href=imagenes[contador%imagenes.length][1];
+    }
+ 
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload=function()
+    {
+        // Cargamos una imagen aleatoria
+        rotarImagenes();
+ 
+        // Indicamos que cada 5 segundos cambie la imagen
+        setInterval(rotarImagenes,3000);
+    }
+</script>
+<style>
+body{
+  background-image: url(Imagenes/u2/fondos.gif);
+-webkit-background-size: 500px 400px;
+}
+a:link{
+	text-decoration:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+	<header>
+		<div class="contenedor">
+			<div class="logo">
+				
+			</div>
+			<nav class="menu-fixed">
+            <nav class="nav">
+				<ul>
+					<li><a href="Unidad2.html"><font size="+2">Inicio</font></a></li>
+					<li><a href="02Armado.html"><font size="+2">Armado De Una PC</font></a></li>
+					<li><a href="02Categorias.html"><font size="+2">Categorias De PC</font></a></li>
+					<li><a href="02NecesitasPC.html"><font size="+2">Que Tipo De PC Necesitas</font></a></li>
+					<li><a href="02Extra.html"><font size="+2">Extra</font></a></li>
+				</ul>
+			</nav>
+            </nav>
+		</div>
+	</header>
+ <div class="contenedor"> 
+ <br> <br> <br>  <br> <br> 
+ <p align="center"><a href="" id="link"><img src="" id="imagen" width="700" height="400"></a></p>
+</div>
+<p align="center"><font size="+2" color="#0099FF">Puede Darle Clic A Las Imagenes De Arriba</font></p>
+<table width="80%" border="0" cellspacing="5" align="center">
+  <tr>
+    <td  class="submenu1 boton_fondo_corredizo_abajo"><a href="02Generaciones.html"><p align="center"><font size="+6">Generaciones De Las PC's</font></p></a></td>
+    <td class="submenu2 boton_fondo_corredizo_abajo"><a href="02Diferencias.html"><p align="center"><font size="+6">Diferencias Entre Hadwares</font></p></a></td>
+    <td class="submenu3 boton_fondo_corredizo_abajo"><a href="02TiposSoft.html"><p align="center"><font size="+6">Tipos De Software</font></p></a></td>
+  </tr>
+  <tr>
+    <td class="submenu4 boton_fondo_corredizo_abajo"><a href="02Tiendas.html"><p align="center"><font size="+6">En Que Tienda Comprar</font></p></a></td>
+    <td class="submenu5 boton_fondo_corredizo_abajo"><a href="02Sistemas.html"><p align="center"><font size="+6">Sistemas Operativos</font></p></a></td>
+    <td class="submenu6 boton_fondo_corredizo_abajo"><a href="02Mejor.html"><p align="center"><font size="+6">Mejores Antivirus</font></p></a></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" align="center">
+<tr>
+	<td class="submenu7"><p align="center"><font size="+3" face="Palatino Linotype, Book Antiqua, Palatino, serif" color="#33FFFF"> Carbajal Velazquez Alejandro 6IV21  </font></p></td>
+    </tr>
+    <tr>
+    <td width="40%" class="submenu7"><p align="center"><font size="+1" color="#FFFFFF"> 
+    Dudas o Sugerencias: <br>
+    aleshmusic99@gmail.com <br>
+    Tel: 5535985000
+    </font></p></td>
+    </table> 
+
+
+</body>
+</html>
